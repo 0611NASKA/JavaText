@@ -2,19 +2,18 @@ package Text.Chap03;
 
 import java.util.Scanner;
 
-public class Equal {
-  public static void main(String[] args) {
+public class Min2Cond {
+  public static void main(String[] main) {
     Scanner stdIn = new Scanner(System.in);
 
     System.out.print("整数a：");
     int a = stdIn.nextInt();
+
     System.out.print("整数b：");
     int b = stdIn.nextInt();
 
-    if (a == b)
-      System.out.println("二つの値は等しいです。");
-    else
-      System.out.println("二つの値は等しくありません。");
+    int min = a < b ? a : b;
+    System.out.println("小さいほうの値は" + min + "です。");
     stdIn.close();
   }
 }

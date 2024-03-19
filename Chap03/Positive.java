@@ -11,5 +11,6 @@ public class Positive {
 
     if (n > 0)
       System.out.println("その値は正です。");
+    stdIn.close();
   }
 }

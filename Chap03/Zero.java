@@ -13,5 +13,6 @@ public class Zero {
       System.out.println("その値はゼロです");
     else
       System.out.println("その値はゼロではありません。");
+    stdIn.close();
   }
 }

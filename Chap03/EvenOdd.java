@@ -2,7 +2,7 @@ package Text.Chap03;
 
 import java.util.Scanner;
 
-public class Sign {
+public class EvenOdd {
   public static void main(String[] args) {
     Scanner stdIn = new Scanner(System.in);
 
@@ -10,11 +10,12 @@ public class Sign {
     int n = stdIn.nextInt();
 
     if (n > 0)
-      System.out.println("その値は正です。");
-    else if (n < 0)
-      System.out.println("その値は負です。");
+      if (n % 2 == 0)
+        System.out.println("その値は偶数です。");
+      else
+        System.out.println("その値は奇数です。");
     else
-      System.out.println("その値は0です。");
+      System.out.println("正でない値が入力されました。");
     stdIn.close();
   }
 }

@@ -13,5 +13,6 @@ public class PositiveNot {
       System.out.println("その値は正です。");
     else
       System.out.println("その値は0か負です。");
+    stdIn.close();
   }
 }

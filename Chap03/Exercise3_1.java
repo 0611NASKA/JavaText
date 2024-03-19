@@ -14,5 +14,6 @@ public class Exercise3_1 {
     }
 
     System.out.println("その絶対値は" + a + "です。");
+    sc.close();
   }
 }

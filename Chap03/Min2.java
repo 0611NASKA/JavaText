@@ -2,7 +2,7 @@ package Text.Chap03;
 
 import java.util.Scanner;
 
-public class Equal {
+public class Min2 {
   public static void main(String[] args) {
     Scanner stdIn = new Scanner(System.in);
 
@@ -11,10 +11,13 @@ public class Equal {
     System.out.print("整数b：");
     int b = stdIn.nextInt();
 
-    if (a == b)
-      System.out.println("二つの値は等しいです。");
+    int min;
+    if (a < b)
+      min = a;
     else
-      System.out.println("二つの値は等しくありません。");
+      min = b;
+
+    System.out.println("小さいほうの値は" + min + "です。");
     stdIn.close();
   }
 }

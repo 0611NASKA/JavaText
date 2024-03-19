@@ -15,5 +15,6 @@ public class Exercise3_3 {
       System.out.println("その値は負です。");
     else if (n == 0)
       System.out.println("その値は0です。");
+    stdIn.close();
   }
 }
