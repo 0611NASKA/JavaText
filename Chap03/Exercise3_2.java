@@ -31,8 +31,13 @@ public class Exercise3_2 {
     System.out.print("整数B：");
     // 整数Bの値をコンソールで受け付け
     int b = standardInput.nextInt();
-    // b が0の時
-    if (b == 0) {
+    // aかbが負の値の場合
+    // 正の整数値の入力を求めているので負の値では計算しない
+    if (a < 0 || b < 0) {
+      // 文字列を改行ありで出力
+      System.out.println("整数A,Bともに正の整数を入力してください。");
+      // b が0の時
+    } else if (b == 0) {
       // 文字列を改行ありで出力
       System.out.println("Bが0では約数を求めることができません");
       // a/bの余りが0の時
@@ -47,5 +52,4 @@ public class Exercise3_2 {
     // scannerの受付を終了
     standardInput.close();
   }
-  // 正の整数値の入力を前提としているため負は考えない
 }
